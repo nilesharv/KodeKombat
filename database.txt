@@ -1,0 +1,72 @@
+used databse: mysql
+username:root
+password:niyk
+
+Database name:kodekombat
+
+table:
+login
+round
+round1
+round2
+
+
+show tables;
++----------------------+
+| Tables_in_kodekombat |
++----------------------+
+| login                |
+| round                |
+| round1               |
+| round2               |
++----------------------+
+4 rows in set (0.00 sec)
+
+desc login;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| name     | varchar(100) | NO   |     | NULL    |       |
+| email    | varchar(100) | NO   | PRI | NULL    |       |
+| mobile   | varchar(12)  | YES  |     | NULL    |       |
+| password | varchar(20)  | NO   |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+
+desc round
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| round  | varchar(30) | YES  |     | NULL    |       |
+| status | tinyint(1)  | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+2 rows in set (0.03 sec)
+
+desc round1
++-------+---------------+------+-----+---------+-------+
+| Field | Type          | Null | Key | Default | Extra |
++-------+---------------+------+-----+---------+-------+
+| email | varchar(50)   | YES  | UNI | NULL    |       |
+| A     | decimal(20,0) | YES  |     | NULL    |       |
+| Ba    | varchar(500)  | YES  |     | NULL    |       |
+| Bb    | varchar(500)  | YES  |     | NULL    |       |
+| Bc    | varchar(500)  | YES  |     | NULL    |       |
+| C     | decimal(20,0) | YES  |     | NULL    |       |
++-------+---------------+------+-----+---------+-------+
+
+
+mysql> desc round2;
++-------+--------------+------+-----+---------+-------+
+| Field | Type         | Null | Key | Default | Extra |
++-------+--------------+------+-----+---------+-------+
+| email | varchar(100) | YES  | UNI | NULL    |       |
+| A     | varchar(300) | YES  |     | NULL    |       |
+| B     | varchar(300) | YES  |     | NULL    |       |
++-------+--------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+
+
+
+
+
+
